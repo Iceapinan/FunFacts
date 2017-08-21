@@ -8,6 +8,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.RelativeLayout
 import android.widget.TextView
+import android.widget.Toast
 import java.util.*
 
 class FunFactsActivity : AppCompatActivity() {
@@ -16,6 +17,7 @@ class FunFactsActivity : AppCompatActivity() {
     private lateinit var factTextView: TextView
     private lateinit var showFactButton: Button
     private lateinit var relativeLayout : RelativeLayout
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fun_facts)
@@ -31,6 +33,7 @@ class FunFactsActivity : AppCompatActivity() {
             showFactButton.setTextColor(color)
         })
         showFactButton.setOnClickListener(listener)
+        Toast.makeText(this,"Hello, My name is Apinan",Toast.LENGTH_SHORT).show()
 
     }
 }
